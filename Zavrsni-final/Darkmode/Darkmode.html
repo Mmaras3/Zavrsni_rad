@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Darkmode.css">
+    <title>Zavrsni rad</title>
+</head>
+<body>
+    <article>
+        <div class="a">
+            <nav>
+                <a href="Darkmode.html">Tamni način</a>
+                <a href="../Gradient/Gradient.html">Gradijenti</a>
+                <a href="../Y2K/Y2K.html">Y2K estetika</a>
+                <a href="../Minimal/Minimal.html">Minimalistički dizajn</a>
+            </nav>
+        </div>
+        <div class="b" style="text-align: right">
+            <button id="dark-mode-toggle">Tamni način</button>
+        </div>
+        <div class="c">
+            <h1>Tamni način rada</h1>
+        </div>
+        <div class="d">
+            <p>Tamni način rada je shema boja koja koristi tamne ili crne pozadine s tekstom i elementima svjetlije boje. 
+                Ovaj način rada nudi vizualnu privlačnost, smanjuje naprezanje očiju te može produljiti trajanje baterije na 
+                uređajima. Glavni pokretač tamnog načina rada je velila količina vremena koju provodimo gledajući u zaslon.
+                Glavna prednost tamnog načina rada je vizualna privlačnost. Korištenjem tamne sheme boja stvara se elegantan, 
+                sofisticiran i moderan izgled mrežne stranice koji će privući korisnike. Tamni način rada smanjuje naprezanje
+                i umor očiju. Upotreba tamne pozadine sa svijetlim elementima stvara veći kontrast te tako olakšava čitanje i 
+                kretanje kroz sadržaj. Ovakav način rada energetski je učinkovitiji jer tamnija pozadina zahtijeva manje energije 
+                za prikaz. Ovo može produljiti trajanje baterije na mobilnim uređajima.
+            </p>
+        </div>
+    </article>
+    <script>
+        const toggle = document.querySelector('#dark-mode-toggle');
+        const body = document.querySelector('body');
+
+        toggle.addEventListener('click', function () {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

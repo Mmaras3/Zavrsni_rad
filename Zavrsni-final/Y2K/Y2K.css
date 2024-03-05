@@ -1,0 +1,91 @@
+body {
+    background-image: url('Y2Kpozadina.jpg');
+}
+
+a {
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+a:hover{
+    color: rgb(255, 4, 4);
+}
+
+
+@media(min-width: 1281px) {
+    div {
+        min-height: 20px;
+        line-height: 20px;
+    }
+
+    article {
+        display: grid;
+        grid-template-areas:
+            "a b b d"
+            "a b b d"
+            "a c c d"
+            "a c c d";
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .gifovi{
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    h1{
+        text-align: center;
+
+    }
+
+
+    li{
+        font-family: cursive;
+        font-size: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .a{
+        background-color: rgb(224, 224, 224);
+    }
+    .d{
+        background-color: rgb(224, 224, 224);
+    }
+    .c{
+        background-color: rgb(250, 208, 248);
+        font-family: cursive;
+        font-size: 20px;
+    }
+}
+@media(min-width: 1025px) and (max-width: 1200px) {
+    div {
+        min-height: 20px;
+        line-height: 20px;
+    }
+    article {
+        display: grid;
+        grid-template-areas:
+            "a a"
+            "b b"
+            "c c"
+            "d d";
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+}
+.a {
+    grid-area: a;
+}
+.b {
+    grid-area: b;
+}
+.c {
+    grid-area: c;
+}
+.d {
+    grid-area: d;
+}
+
+

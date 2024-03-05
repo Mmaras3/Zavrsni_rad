@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+    font-size: 50pt;
+}
+
+a {
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+a:hover {
+    color: rgb(255, 4, 4);
+}
+
+body {
+    background-color: rgb(216, 216, 216);
+}
+
+nav {
+    text-align: center;
+    font-size: 20pt;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+@media(min-width: 1281px) {
+    div {
+        min-height: 30px;
+        line-height: 40px;
+    }
+
+    article {
+        display: grid;
+        grid-template-areas:
+            "a a a a"
+            "b b b b"
+            "c c c c"
+            "d d d d";
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    
+    p{
+        font-size: 30px;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1200px) {
+    div {
+        min-height: 20px;
+        line-height: 20px;
+    }
+
+    article {
+        display: grid;
+        grid-template-areas:
+            "a a"
+            "b b"
+            "c c"
+            "d d";
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+
+
+
